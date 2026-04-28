@@ -1,0 +1,25 @@
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Audio processing
+openai-whisper
+librosa
+
+# RAG pipeline
+langchain
+langchain-openai
+chromadb
+
+# LLM
+openai
+
+# Database
+sqlalchemy>=2.0.36
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# Utilities
+python-dotenv==1.0.1
+pydantic-settings==2.2.1
+boto3
