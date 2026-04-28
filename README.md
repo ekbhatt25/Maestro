@@ -1,4 +1,4 @@
-# Riff
+# Maestro
 
 **AI-powered music practice coach.** Record yourself playing, get instant feedback on technique, timing, and theory — like having a teacher available 24/7.
 
