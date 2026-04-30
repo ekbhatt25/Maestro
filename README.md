@@ -18,9 +18,10 @@
 | **Audio processing** | Whisper (transcription), librosa (feature extraction) |
 | **RAG pipeline** | LangChain + ChromaDB + sentence-transformers (embeddings) |
 | **LLM** | Groq (llama-3.3-70b-versatile) |
-| **Database** | PostgreSQL + SQLAlchemy (users, sessions, feedback) |
+| **Auth + Database** | Supabase (auth, PostgreSQL, free tier) |
+| **ORM** | SQLAlchemy + Alembic |
 | **Storage** | AWS S3 (audio files) |
-| **Deployment** | AWS ECS + RDS |
+| **Deployment** | AWS ECS |
 
 ## Project structure
 

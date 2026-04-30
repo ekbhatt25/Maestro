@@ -7,9 +7,11 @@ class Settings(BaseSettings):
     groq_api_key: str
     groq_model: str = "llama-3.3-70b-versatile"
 
-    database_url: str 
+    supabase_url: str
+    supabase_anon_key: str
+    database_url: str
 
-    aws_access_key_id: str = "" # won't need these until deployment
+    aws_access_key_id: str = ""
     aws_secret_access_key: str = ""
     aws_s3_bucket: str = ""
 
