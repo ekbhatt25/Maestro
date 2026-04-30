@@ -40,7 +40,7 @@ app/
 │   └── coach_agent.py    # LLM feedback generation
 └── db/
     ├── database.py       # Engine and session factory
-    └── models.py         # User, Session, Feedback
+    └── models.py         # PracticeSession, Feedback
 ```
 
 ## Setup
@@ -48,7 +48,7 @@ app/
 ```bash
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env      # add OpenAI key, DB URL, AWS credentials
+cp .env.example .env      # add Groq key, Supabase credentials, AWS credentials
 ```
 
 ```bash
@@ -61,10 +61,12 @@ uvicorn app.main:app --reload
 
 ## Status
 
+- [x] Project config (pydantic-settings)
+- [x] Database models (PracticeSession, Feedback)
+- [ ] Database engine + session factory
 - [ ] Audio processing pipeline (Whisper + librosa)
 - [ ] Music theory knowledge base + ChromaDB ingestion
 - [ ] RAG retriever (LangChain + ChromaDB)
-- [ ] Coach agent (LLM feedback generation)
+- [ ] Coach agent (Groq LLM feedback generation)
 - [ ] FastAPI endpoints (upload, feedback, history)
-- [ ] PostgreSQL persistence (users, sessions, feedback)
-- [ ] AWS deployment (ECS + RDS + S3)
+- [ ] AWS S3 storage + deployment
