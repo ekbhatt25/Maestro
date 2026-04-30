@@ -63,8 +63,8 @@ uvicorn app.main:app --reload
 
 - [x] Project config (pydantic-settings)
 - [x] Database models (PracticeSession, Feedback)
-- [ ] Database engine + session factory
-- [ ] Audio processing pipeline (Whisper + librosa)
+- [x] Database engine + session factory
+- [x] Audio processing pipeline (Whisper + librosa)
 - [ ] Music theory knowledge base + ChromaDB ingestion
 - [ ] RAG retriever (LangChain + ChromaDB)
 - [ ] Coach agent (Groq LLM feedback generation)
