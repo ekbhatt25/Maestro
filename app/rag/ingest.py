@@ -13,7 +13,7 @@ _client = chromadb.PersistentClient(path="chroma_db")
 
 def ingest(docs_dir: str = "docs") -> None:
     loader = DirectoryLoader(docs_dir, glob="**/*.txt", loader_cls=TextLoader)
-    docs = loader.load()
+    docs = loader.load() # load knoweldge base
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
     chunks = splitter.split_documents(docs)
