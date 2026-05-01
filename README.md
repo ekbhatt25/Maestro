@@ -66,7 +66,7 @@ uvicorn app.main:app --reload
 - [x] Database engine + session factory
 - [x] Audio processing pipeline (Whisper + librosa)
 - [x] Music theory knowledge base + ChromaDB ingestion
-- [ ] RAG retriever (LangChain + ChromaDB)
-- [ ] Coach agent (Groq LLM feedback generation)
+- [x] RAG retriever (LangChain + ChromaDB)
+- [x] Coach agent (Groq LLM feedback generation)
 - [ ] FastAPI endpoints (upload, feedback, history)
 - [ ] AWS S3 storage + deployment
