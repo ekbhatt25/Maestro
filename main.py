@@ -4,6 +4,8 @@ from fastapi import FastAPI, UploadFile, File
 
 from app.audio.features import extract_features
 from app.audio.transcribe import transcribe
+from app.rag.retriever import retrieve
+from app.agents.coach_agent import generate_feedback
 
 app = FastAPI(title="Maestro")
 
@@ -21,9 +23,11 @@ async def analyze(audio: UploadFile = File(...)):
 
     transcript = transcribe(tmp_path)
     features = extract_features(tmp_path)
+    context = retrieve(transcript)
+    feedback = generate_feedback(transcript, features, context)
 
     return {
         "transcript": transcript,
         "features": features,
-        "feedback": "stub feedback",
+        "feedback": feedback,
     }
