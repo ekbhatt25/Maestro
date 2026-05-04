@@ -26,15 +26,14 @@
 ## Project structure
 
 ```
+main.py                   # FastAPI app and routes
 app/
-├── main.py               # FastAPI app and routes
 ├── config.py             # pydantic-settings config
-├── pipeline.py           # Orchestrates audio → features → RAG → feedback
 ├── audio/
 │   ├── transcribe.py     # Whisper transcription
 │   └── features.py       # librosa feature extraction (tempo, pitch, dynamics)
 ├── rag/
-│   ├── retriever.py      # ChromaDB vector store + LangChain retriever
+│   ├── retriever.py      # ChromaDB similarity search
 │   └── ingest.py         # Music theory knowledge base ingestion
 ├── agents/
 │   └── coach_agent.py    # LLM feedback generation
@@ -52,12 +51,22 @@ cp .env.example .env      # add Groq key, Supabase credentials, AWS credentials
 ```
 
 ```bash
+# Ingest music theory docs into ChromaDB
+python3 -c "from app.rag.ingest import ingest; ingest()"
+
 # Create tables
 python3 -c "from app.db.database import engine; from app.db.models import Base; Base.metadata.create_all(engine)"
 
 # Run locally
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
+
+## API
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/health` | Server health check |
+| `POST` | `/analyze` | Upload audio, get back transcript, features, and coach feedback |
 
 ## Status
 
@@ -66,7 +75,8 @@ uvicorn app.main:app --reload
 - [x] Database engine + session factory
 - [x] Audio processing pipeline (Whisper + librosa)
 - [x] Music theory knowledge base + ChromaDB ingestion
-- [x] RAG retriever (LangChain + ChromaDB)
+- [x] RAG retriever (ChromaDB similarity search)
 - [x] Coach agent (Groq LLM feedback generation)
-- [ ] FastAPI endpoints (upload, feedback, history)
+- [x] FastAPI endpoints (`/health`, `/analyze`)
+- [ ] Auth (Supabase user ID)
 - [ ] AWS S3 storage + deployment
