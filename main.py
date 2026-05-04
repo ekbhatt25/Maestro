@@ -1,4 +1,9 @@
+import tempfile
+
 from fastapi import FastAPI, UploadFile, File
+
+from app.audio.features import extract_features
+from app.audio.transcribe import transcribe
 
 app = FastAPI(title="Maestro")
 
@@ -10,8 +15,15 @@ def health():
 
 @app.post("/analyze")
 async def analyze(audio: UploadFile = File(...)):
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
+        tmp.write(await audio.read())
+        tmp_path = tmp.name
+
+    transcript = transcribe(tmp_path)
+    features = extract_features(tmp_path)
+
     return {
-        "transcript": "stub",
-        "features": {},
+        "transcript": transcript,
+        "features": features,
         "feedback": "stub feedback",
     }
