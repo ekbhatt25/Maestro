@@ -1,0 +1,27 @@
+Guitar Technique
+
+Guitar technique varies between classical, acoustic, and electric styles, but foundational mechanics are shared.
+
+Posture: classical position uses a footrest to raise the left leg, supporting the guitar on the thigh. Casual/electric position rests the guitar on the right thigh. Keep the back straight and the neck of the guitar slightly angled upward.
+
+Fretting hand: press strings close to (but not on) the fret. Use the fingertips, not the pads. The thumb should rest behind the neck, roughly behind the middle finger. Avoid squeezing — use just enough pressure to produce a clean note.
+
+Picking hand: for flatpicking, hold the pick between the thumb and the side of the index finger. Relax the grip. Pick motion should come from the wrist, not the arm, for speed and efficiency.
+
+Fingerpicking (fingerstyle): PIMA notation — P (thumb), I (index), M (middle), A (ring). The thumb typically handles bass strings (E, A, D); fingers handle treble strings (G, B, e).
+
+Barre chords: press the index finger across all strings at a fret. Common difficulty point for beginners. Key: place the index finger close to the fret, use thumb leverage, and roll the index finger slightly toward the nut to use the bony side.
+
+String bending: push or pull a string sideways to raise its pitch. A full bend raises pitch by one whole step. Intonation is critical — bend to a specific target pitch, not vaguely "up."
+
+Vibrato: oscillate pitch up and down after attacking a note. Speed and width of vibrato are stylistic choices. Classical vibrato moves toward the nut; electric vibrato typically pushes up (bending upward repeatedly).
+
+Muting: right-hand muting (palm mute) rests the picking hand lightly on the strings near the bridge for a damped, percussive sound. Left-hand muting lifts fretting fingers slightly to silence strings.
+
+Common issues:
+- Buzzing notes from insufficient fretting pressure or poor finger placement
+- Tension in the fretting hand causing fatigue
+- Uneven alternate picking
+- Sloppy string muting causing unwanted noise
+
+Practice tip: Use a loop pedal or DAW to record a rhythm part, then improvise over it. This builds timing, ear training, and creativity simultaneously.

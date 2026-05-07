@@ -1,0 +1,22 @@
+Pitch and Intonation
+
+Pitch is the perceived highness or lowness of a sound, determined by frequency (Hz). Concert A4 is standardized at 440 Hz. Each octave doubles the frequency: A3 = 220 Hz, A5 = 880 Hz.
+
+Intonation refers to pitch accuracy — playing in tune. Poor intonation is one of the most common issues in beginning and intermediate players, especially on fretless string instruments, brass, woodwinds, and voice.
+
+Equal temperament divides the octave into 12 equal semitones. Each semitone is a ratio of the twelfth root of 2 (~1.0595). This is the tuning system used by most modern instruments.
+
+Cents: Pitch deviation is measured in cents. 100 cents = 1 semitone. Playing 20+ cents sharp or flat is noticeably out of tune to most listeners.
+
+Causes of poor intonation:
+- Instrument not properly tuned before playing
+- Embouchure tension or inconsistency (wind/brass/voice)
+- Finger placement (fretted vs. fretless strings)
+- Temperature changes affecting instrument resonance
+- Poor listening habits — not hearing the target pitch before playing it
+
+Ear training exercises: Sing or hum a pitch before playing it. Practice long tones while tuning to a drone. Compare your pitch to a reference tone and adjust in real time.
+
+Vibrato is a controlled oscillation in pitch used as an expressive technique. Width and speed of vibrato should match the musical context — wide and slow for Romantic music, narrow and fast for Baroque.
+
+Practice tip: Use a chromatic tuner or tuning app to visualize pitch accuracy objectively. Practicing to drones (sustained root notes) trains the ear to hear and correct intonation faster than tuners alone.

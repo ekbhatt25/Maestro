@@ -1,0 +1,36 @@
+Music Theory Fundamentals
+
+Music theory is the language used to describe, analyze, and communicate music. Understanding theory connects what you hear to what you play.
+
+The staff and clef: music is written on a five-line staff. The treble clef (G clef) is used for higher-pitched instruments; the bass clef (F clef) for lower-pitched instruments. The grand staff combines both.
+
+Note values and meter:
+- Whole note: 4 beats
+- Half note: 2 beats
+- Quarter note: 1 beat
+- Eighth note: 1/2 beat
+- Sixteenth note: 1/4 beat
+A dot after a note adds half its value (dotted quarter = 1.5 beats).
+
+Time signatures: the top number indicates beats per measure; the bottom number indicates which note value gets one beat. 4/4 (common time): 4 quarter-note beats. 3/4 (waltz time): 3 quarter-note beats. 6/8: 6 eighth-note beats, typically felt in 2.
+
+The chromatic scale: all 12 pitches in Western music, each a half step apart. The seven natural pitches are A B C D E F G; the remaining five are sharps (#) or flats (b) of adjacent naturals.
+
+Intervals: the distance between two pitches.
+- Unison (0 semitones), minor 2nd (1), major 2nd (2), minor 3rd (3), major 3rd (4)
+- Perfect 4th (5), tritone (6), perfect 5th (7)
+- Minor 6th (8), major 6th (9), minor 7th (10), major 7th (11), octave (12)
+Intervals are either consonant (stable: 3rds, 5ths, 6ths, octaves) or dissonant (unstable: 2nds, 7ths, tritone).
+
+Key signatures: a set of sharps or flats at the beginning of a staff indicating the key of the piece. The circle of fifths shows the relationship between all 12 major keys and their relative minors.
+
+Form: the large-scale structure of a piece.
+- Binary (AB): two contrasting sections
+- Ternary (ABA): two outer sections frame a contrasting middle
+- Rondo (ABACA): recurring main theme alternates with contrasting episodes
+- 12-bar blues: foundational form of blues and rock (I-I-I-I / IV-IV-I-I / V-IV-I-V)
+- 32-bar AABA: common in jazz standards
+
+Ear training: the practice of identifying pitches, intervals, chords, and rhythms by ear. Solfege (Do Re Mi...) is a common system. Interval recognition (hearing a perfect 5th vs. a tritone) is a foundational skill.
+
+Practice tip: Analyze songs you love. Identify the key, chord progression, form, and rhythmic feel. Music theory becomes useful when connected to real music, not abstract exercises.

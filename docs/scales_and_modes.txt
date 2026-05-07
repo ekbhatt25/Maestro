@@ -1,0 +1,26 @@
+Scales and Modes
+
+A scale is an ordered sequence of pitches within an octave. Scales provide the tonal material for melodies and harmonies.
+
+Major scale: W W H W W W H (W = whole step, H = half step). Example: C major — C D E F G A B C. Characterized by a bright, happy sound.
+
+Natural minor scale: W H W W H W W. Example: A minor — A B C D E F G A. Characterized by a darker, more somber sound.
+
+Harmonic minor: raises the 7th degree by a half step. Creates an augmented second between degrees 6 and 7, giving a distinctive Eastern European / Middle Eastern sound. Used in classical and flamenco music.
+
+Melodic minor: raises both the 6th and 7th degrees ascending, reverts to natural minor descending. Used in jazz (ascending form only, called "jazz minor").
+
+Pentatonic scales: five-note scales. Major pentatonic: 1 2 3 5 6. Minor pentatonic: 1 b3 4 5 b7. Widely used in rock, blues, folk, and pop improvisation. Forgiving to play over chord changes.
+
+Blues scale: minor pentatonic + b5 (the "blue note"). Creates the characteristic blues tension.
+
+Modes of the major scale:
+- Ionian (I): major scale
+- Dorian (II): minor with raised 6th — common in jazz and rock
+- Phrygian (III): minor with b2 — Spanish/flamenco sound
+- Lydian (IV): major with #4 — dreamy, floating quality
+- Mixolydian (V): major with b7 — common in blues and rock
+- Aeolian (VI): natural minor
+- Locrian (VII): diminished quality, rarely used as a tonal center
+
+Practice tip: Learn scales in all 12 keys. Practice in thirds, sixths, and contrary motion. Connect scales to the songs and solos you already know — this builds musical context rather than mechanical habit.

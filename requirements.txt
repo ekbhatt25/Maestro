@@ -25,3 +25,4 @@ supabase
 python-dotenv==1.0.1
 pydantic-settings==2.2.1
 boto3
+python-jose[cryptography]==3.3.0

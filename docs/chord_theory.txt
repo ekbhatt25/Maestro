@@ -1,0 +1,32 @@
+Chord Theory
+
+A chord is three or more pitches sounded simultaneously. Harmony is built from chords and their relationships.
+
+Triads: three-note chords built by stacking thirds.
+- Major triad: root, major 3rd, perfect 5th (e.g., C-E-G). Stable and bright.
+- Minor triad: root, minor 3rd, perfect 5th (e.g., C-Eb-G). Stable and dark.
+- Diminished triad: root, minor 3rd, diminished 5th (e.g., C-Eb-Gb). Tense, unstable.
+- Augmented triad: root, major 3rd, augmented 5th (e.g., C-E-G#). Ambiguous, dreamy.
+
+Seventh chords add another third above the triad:
+- Major 7th (Cmaj7): C-E-G-B. Warm and jazzy.
+- Dominant 7th (C7): C-E-G-Bb. Tense, wants to resolve. Foundation of blues.
+- Minor 7th (Cm7): C-Eb-G-Bb. Smooth and mellow.
+- Half-diminished (Cm7b5): C-Eb-Gb-Bb. Used as ii chord in minor keys.
+- Diminished 7th (Cdim7): C-Eb-Gb-Bbb. Symmetrical, very tense.
+
+Chord inversions: the lowest note is not the root. First inversion: 3rd in the bass. Second inversion: 5th in the bass. Inversions create smoother voice leading.
+
+Voice leading: the movement of individual notes between chords. Good voice leading minimizes large leaps and creates smooth, logical melodic lines in each voice.
+
+Roman numeral analysis: chords are labeled by their scale degree. In major: I (major), ii (minor), iii (minor), IV (major), V (major), vi (minor), vii° (diminished). The V-I (dominant to tonic) progression is the strongest resolution in Western music.
+
+Common progressions:
+- I-IV-V-I: foundation of blues and folk
+- I-V-vi-IV: one of the most common pop progressions
+- ii-V-I: cornerstone of jazz harmony
+- I-vi-IV-V: classic doo-wop / 50s progression
+
+Extended chords: 9ths, 11ths, and 13ths add color. Common in jazz and R&B.
+
+Practice tip: Learn to play chord progressions by ear. Hear a song, identify the chord quality (major, minor, dominant), and find the root. This builds harmonic recognition faster than reading theory alone.

@@ -1,0 +1,31 @@
+Dynamics and Expression
+
+Dynamics describe the volume or intensity of music. Controlled dynamics are a hallmark of expressive, musical playing.
+
+Standard dynamic markings (from softest to loudest):
+- ppp (pianississimo): extremely soft
+- pp (pianissimo): very soft
+- p (piano): soft
+- mp (mezzo-piano): moderately soft
+- mf (mezzo-forte): moderately loud
+- f (forte): loud
+- ff (fortissimo): very loud
+- fff (fortississimo): extremely loud
+
+Crescendo: a gradual increase in volume. Decrescendo / diminuendo: a gradual decrease in volume.
+
+RMS (Root Mean Square) energy measures the average loudness of an audio signal. Low RMS indicates quiet playing; high RMS indicates loud playing. Dynamic range is the difference between the softest and loudest parts of a performance.
+
+Dynamic contrast gives music shape and direction. A phrase that builds from p to f and then releases has narrative tension. Flat dynamics — playing everything at the same volume — makes even technically clean playing sound lifeless.
+
+Articulation works with dynamics to shape notes: staccato (short and separated), legato (smooth and connected), accent (emphasis on a single note), tenuto (hold the note for full value).
+
+Common issues:
+- Playing too loud at all times (loss of dynamic range)
+- Inability to sustain a true piano without tension
+- Crescendos that spike rather than grow gradually
+- Inconsistent dynamic level across registers of the instrument
+
+Expression goes beyond dynamics: phrasing (shaping melodic lines with breath and intention), rubato (flexible tempo for emotional effect), and tone color all contribute to an expressive performance.
+
+Practice tip: Record a passage at ppp, then at fff. Listen to both. Then practice the full dynamic range within a single phrase.
