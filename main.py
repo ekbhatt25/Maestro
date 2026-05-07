@@ -1,6 +1,7 @@
 import tempfile
 
 from fastapi import FastAPI, UploadFile, File, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from app.audio.features import extract_features
@@ -12,6 +13,13 @@ from app.db.database import get_db
 from app.db.models import PracticeSession, Feedback
 
 app = FastAPI(title="Maestro")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
