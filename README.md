@@ -54,8 +54,8 @@ cp .env.example .env      # add Groq key, Supabase credentials, AWS credentials
 # Ingest music theory docs into ChromaDB
 python3 -c "from app.rag.ingest import ingest; ingest()"
 
-# Create tables
-python3 -c "from app.db.database import engine; from app.db.models import Base; Base.metadata.create_all(engine)"
+# Run DB migrations
+python3 -m alembic upgrade head
 
 # Run locally
 uvicorn main:app --reload
@@ -63,20 +63,25 @@ uvicorn main:app --reload
 
 ## API
 
+All endpoints except `/health` require a Supabase JWT passed as `Authorization: Bearer <token>`.
+
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/health` | Server health check |
 | `POST` | `/analyze` | Upload audio, get back transcript, features, and coach feedback |
+| `GET` | `/sessions` | Retrieve the authenticated user's practice history |
 
 ## Status
 
 - [x] Project config (pydantic-settings)
 - [x] Database models (PracticeSession, Feedback)
 - [x] Database engine + session factory
+- [x] Alembic migrations
 - [x] Audio processing pipeline (Whisper + librosa)
-- [x] Music theory knowledge base + ChromaDB ingestion
-- [x] RAG retriever (ChromaDB similarity search)
+- [x] Music theory knowledge base (10 docs) + ChromaDB ingestion
+- [x] RAG retriever with fallback for instrumental audio
 - [x] Coach agent (Groq LLM feedback generation)
-- [x] FastAPI endpoints (`/health`, `/analyze`)
-- [ ] Auth (Supabase user ID)
-- [ ] AWS S3 storage + deployment
+- [x] Supabase JWT auth
+- [x] FastAPI endpoints (`/health`, `/analyze`, `/sessions`)
+- [ ] AWS S3 audio storage
+- [ ] Deployment (AWS ECS)
