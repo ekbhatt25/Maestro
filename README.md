@@ -18,10 +18,10 @@
 | **Audio processing** | Whisper (transcription), librosa (feature extraction) |
 | **RAG pipeline** | LangChain + ChromaDB + sentence-transformers (embeddings) |
 | **LLM** | Groq (llama-3.3-70b-versatile) |
-| **Auth + Database** | Supabase (auth, PostgreSQL, free tier) |
+| **Auth + Database** | Supabase (auth, PostgreSQL) |
 | **ORM** | SQLAlchemy + Alembic |
-| **Storage** | AWS S3 (audio files) |
-| **Deployment** | AWS ECS |
+| **Frontend** | Next.js + Tailwind CSS (Vercel) |
+| **Deployment** | Render (backend + Postgres) |
 
 ## Project structure
 
@@ -29,6 +29,7 @@
 main.py                   # FastAPI app and routes
 app/
 ├── config.py             # pydantic-settings config
+├── auth.py               # Supabase JWT middleware
 ├── audio/
 │   ├── transcribe.py     # Whisper transcription
 │   └── features.py       # librosa feature extraction (tempo, pitch, dynamics)
@@ -40,14 +41,17 @@ app/
 └── db/
     ├── database.py       # Engine and session factory
     └── models.py         # PracticeSession, Feedback
+docs/                     # Music theory knowledge base (10 .txt files)
+frontend/                 # Next.js app (login, dashboard)
+alembic/                  # DB migrations
 ```
 
-## Setup
+## Local setup
 
 ```bash
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env      # add Groq key, Supabase credentials, AWS credentials
+cp .env.example .env      # fill in Groq, Supabase, and DB credentials
 ```
 
 ```bash
@@ -57,31 +61,44 @@ python3 -c "from app.rag.ingest import ingest; ingest()"
 # Run DB migrations
 python3 -m alembic upgrade head
 
-# Run locally
+# Run backend
 uvicorn main:app --reload
+```
+
+```bash
+# Run frontend
+cd frontend
+cp .env.local.example .env.local   # fill in Supabase and API URL
+npm install
+npm run dev
 ```
 
 ## API
 
-All endpoints except `/health` require a Supabase JWT passed as `Authorization: Bearer <token>`.
+All endpoints except `/health` require a Supabase JWT: `Authorization: Bearer <token>`.
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/health` | Server health check |
-| `POST` | `/analyze` | Upload audio, get back transcript, features, and coach feedback |
-| `GET` | `/sessions` | Retrieve the authenticated user's practice history |
+| `GET` | `/health` | Health check |
+| `POST` | `/analyze` | Upload audio, returns transcript, features, and coach feedback |
+| `GET` | `/sessions` | Returns the authenticated user's practice history |
+
+## Deployment
+
+**Backend (Render):** Connect repo at render.com → New → Blueprint. Reads `render.yaml` automatically. Fill in `GROQ_API_KEY`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_JWT_SECRET` in the Render dashboard. `DATABASE_URL` is auto-provisioned.
+
+**Frontend (Vercel):** Connect repo at vercel.com, set root directory to `frontend/`, add `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `NEXT_PUBLIC_API_URL` as env vars.
+
+Also add your Vercel URL to Supabase → Authentication → URL Configuration as a redirect URL.
 
 ## Status
 
-- [x] Project config (pydantic-settings)
-- [x] Database models (PracticeSession, Feedback)
-- [x] Database engine + session factory
-- [x] Alembic migrations
+- [x] Project config and auth (pydantic-settings, Supabase JWT)
+- [x] Database models, migrations (SQLAlchemy + Alembic)
 - [x] Audio processing pipeline (Whisper + librosa)
-- [x] Music theory knowledge base (10 docs) + ChromaDB ingestion
-- [x] RAG retriever with fallback for instrumental audio
-- [x] Coach agent (Groq LLM feedback generation)
-- [x] Supabase JWT auth
-- [x] FastAPI endpoints (`/health`, `/analyze`, `/sessions`)
+- [x] Music theory knowledge base + ChromaDB RAG
+- [x] Coach agent (Groq LLM feedback)
+- [x] REST API (`/health`, `/analyze`, `/sessions`)
+- [x] Frontend (login, dashboard, session history)
+- [x] Render deployment config (`render.yaml`)
 - [ ] AWS S3 audio storage
-- [ ] Deployment (AWS ECS)
